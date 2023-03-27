@@ -10,3 +10,9 @@ pnpm install
 ```bash
 pnpm run storybook
 ```
+
+3. test
+```bash
+pnpm test
+pnpm coverage
+```
