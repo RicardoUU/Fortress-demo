@@ -4,7 +4,7 @@ import * as S from './styled';
 
 const Button:FC = () => (
   <S.Button>
-    按钮
+    按钮123456789
   </S.Button>
 )
 
