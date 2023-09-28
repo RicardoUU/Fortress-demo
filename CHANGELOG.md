@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/RicardoUU/Fortress-demo/compare/v1.1.0...1.2.0) (2023-09-28)
+
+
+### Features
+
+* change for test ([3c941ae](https://github.com/RicardoUU/Fortress-demo/commit/3c941ae98f4c42c833950927f4eb475fe870a322))
+* not include v tag ([065f696](https://github.com/RicardoUU/Fortress-demo/commit/065f696228de479694722140b434c689ba5a33dc))
+
+
+### Bug Fixes
+
+* change for test ([48364ce](https://github.com/RicardoUU/Fortress-demo/commit/48364ce4fda1f7faab6376fcf2d176b55e8e1a13))
+
 ## [1.1.0](https://github.com/RicardoUU/Fortress-demo/compare/v1.0.0...v1.1.0) (2023-09-28)
 
 
