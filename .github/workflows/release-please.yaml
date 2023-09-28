@@ -18,3 +18,4 @@ jobs:
           release-type: node
           package-name: Fortress-Demo
           include-v-in-tag: false
+          default-branch: main
