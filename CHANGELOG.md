@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/RicardoUU/Fortress-demo/compare/1.2.0...1.3.0) (2023-09-28)
+
+
+### Features
+
+* add hotfix workflows ([5de50ba](https://github.com/RicardoUU/Fortress-demo/commit/5de50ba3b7dfc536fc1e12caf9a875f2b2185731))
+
 ## [1.2.0](https://github.com/RicardoUU/Fortress-demo/compare/v1.1.0...1.2.0) (2023-09-28)
 
 
