@@ -18,3 +18,4 @@ jobs:
           release-type: node
           package-name: Fortress-Demo
           include-v-in-tag: false
+          changelog-types: '[{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"Miscellaneous","hidden":false},{"type":"perf","section":"Miscellaneous","hidden":false}]'
