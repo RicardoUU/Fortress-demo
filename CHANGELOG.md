@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/RicardoUU/Fortress-demo/compare/1.4.0...1.5.0) (2023-10-08)
+
+
+### Features
+
+* change default branch ([782cb20](https://github.com/RicardoUU/Fortress-demo/commit/782cb205a790d289c89c3486ce0b9300fa0af896))
+
 ## [1.4.0](https://github.com/RicardoUU/Fortress-demo/compare/1.3.0...1.4.0) (2023-10-08)
 
 
