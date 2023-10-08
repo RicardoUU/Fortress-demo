@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0](https://github.com/RicardoUU/Fortress-demo/compare/1.4.0...1.5.0) (2023-10-08)
+
+
+### Features
+
+* change default branch ([782cb20](https://github.com/RicardoUU/Fortress-demo/commit/782cb205a790d289c89c3486ce0b9300fa0af896))
+
+
+### Miscellaneous
+
+* add workflow_dispatch ([33d8b68](https://github.com/RicardoUU/Fortress-demo/commit/33d8b687a4cc5ee38ad65d1d9397d02240923213))
+* change workflows ([0fb3b85](https://github.com/RicardoUU/Fortress-demo/commit/0fb3b853fec8fc0ce03bea8a3e44b7142263a49f))
+* change workflows name ([d92369b](https://github.com/RicardoUU/Fortress-demo/commit/d92369bb649fd3ac79235c54fddf2a4659ae4fb0))
+
 ## [1.4.0](https://github.com/RicardoUU/Fortress-demo/compare/1.3.0...1.4.0) (2023-10-08)
 
 
