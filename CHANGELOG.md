@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.4.0](https://github.com/RicardoUU/Fortress-demo/compare/1.3.0...1.4.0) (2023-10-08)
+
+
+### Features
+
+* add 1.x workflows ([077c9d3](https://github.com/RicardoUU/Fortress-demo/commit/077c9d3a1863451c62792dc410722fa5ee4a81e2))
+* add permissions ([4ee239e](https://github.com/RicardoUU/Fortress-demo/commit/4ee239e235764edc91b45618177242cd3d804dc0))
+* change ci name ([c9902a6](https://github.com/RicardoUU/Fortress-demo/commit/c9902a6202190581150f4ea6378481436f83facd))
+* change for test ([568f833](https://github.com/RicardoUU/Fortress-demo/commit/568f83312a1fa5e2c9dbe01c7a34b2b0aed8aed4))
+* change for test 1.x ([3ac67a0](https://github.com/RicardoUU/Fortress-demo/commit/3ac67a03e8ad5d27492a83b7716cf61b3b4024b4))
+* change for test hotfix ([a7eeca3](https://github.com/RicardoUU/Fortress-demo/commit/a7eeca364d68f01a8e9606cc2d3361885ee86df1))
+* change workflows ([31a89eb](https://github.com/RicardoUU/Fortress-demo/commit/31a89eb003ca24f56ceeec75d089ffc2902e9f7a))
+* change workflows ([40eafff](https://github.com/RicardoUU/Fortress-demo/commit/40eafff097e423addd5c095cc20d077123d321a9))
+* test hotfix ([7f785ab](https://github.com/RicardoUU/Fortress-demo/commit/7f785ab4ce0a7215f6950a1520ae35319a0f8a85))
+
+
+### Bug Fixes
+
+* change default-branch ([e5c2bd7](https://github.com/RicardoUU/Fortress-demo/commit/e5c2bd7cccb0dd9e49f1cfb1768b5623d71a7a79))
+* change default-branch ([09e469a](https://github.com/RicardoUU/Fortress-demo/commit/09e469ae7f20582602772f0eaa4a2c0b31604174))
+* change to test hotfix ([4fe935e](https://github.com/RicardoUU/Fortress-demo/commit/4fe935ebe912b39b35637a7394fae9f4e8db663b))
+
 ## [1.3.0](https://github.com/RicardoUU/Fortress-demo/compare/1.2.0...1.3.0) (2023-09-28)
 
 
