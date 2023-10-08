@@ -15,4 +15,4 @@ jobs:
           release-type: node
           package-name: release-please-action
           include-v-in-tag: false
-          default-branch: 1.x
+          default-branch: main
