@@ -26,7 +26,7 @@ function App() {
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
-                change for test 1.x
+                change for test 1.x xxxx
             </p>
 
         </div>
