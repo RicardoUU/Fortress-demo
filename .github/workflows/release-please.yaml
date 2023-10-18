@@ -35,6 +35,7 @@ jobs:
       - name: Merge tag to main
         if: ${{ steps.release-please.outputs.release_created }}
         run: |
+          git fetch --tags
           ls -al
           cat package.json
           git merge refs/tags/${{ steps.release-please.outputs.tag_name }}
