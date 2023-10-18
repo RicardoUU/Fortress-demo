@@ -1,11 +1,11 @@
 on:
   push:
     branches:
-      - hotfix/*  # Hotfix branches
+      - 1.x
 permissions:
   contents: write
   pull-requests: write
-name: release-please
+name: release-1.x
 jobs:
   release-please:
     runs-on: ubuntu-latest
@@ -13,7 +13,6 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: Fortress-Demo
+          package-name: release-please-action
           include-v-in-tag: false
-          default-branch: hotfix/*
-          
+          default-branch: main
