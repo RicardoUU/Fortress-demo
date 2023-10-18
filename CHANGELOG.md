@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/RicardoUU/Fortress-demo/compare/1.6.0...1.6.1) (2023-10-18)
+
+
+### Bug Fixes
+
+* test coomit ([35d7d98](https://github.com/RicardoUU/Fortress-demo/commit/35d7d98d8f3e28967745addf9b7c37fe08ffb069))
+
 ## [1.6.0](https://github.com/RicardoUU/Fortress-demo/compare/1.5.0...1.6.0) (2023-10-18)
 
 
