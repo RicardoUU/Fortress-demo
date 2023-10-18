@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.4](https://github.com/RicardoUU/Fortress-demo/compare/1.6.3...1.6.4) (2023-10-18)
+
+
+### Bug Fixes
+
+* add personal token ([243b0aa](https://github.com/RicardoUU/Fortress-demo/commit/243b0aa0f8e326cda94dd4ee8fadfe6c30e86d60))
+
 ## [1.6.3](https://github.com/RicardoUU/Fortress-demo/compare/1.6.2...1.6.3) (2023-10-18)
 
 
