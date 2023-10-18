@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.0](https://github.com/RicardoUU/Fortress-demo/compare/1.5.0...1.6.0) (2023-10-18)
+
+
+### Features
+
+* change prod flows ([2323753](https://github.com/RicardoUU/Fortress-demo/commit/23237537ea58c1302d74cb65a578e4603740d269))
+* change release flows ([4aaa6f0](https://github.com/RicardoUU/Fortress-demo/commit/4aaa6f0e6f684cf8b57de0bf07ebbe99277dd3b0))
+* merge to main ([a161b79](https://github.com/RicardoUU/Fortress-demo/commit/a161b79b8a2c6abbe768a9d57b47c3e3399468a6))
+* test test ([5377bed](https://github.com/RicardoUU/Fortress-demo/commit/5377bed82787c86d91bd3e87853a33600aa4ec71))
+
 ## [1.5.0](https://github.com/RicardoUU/Fortress-demo/compare/1.4.0...1.5.0) (2023-10-08)
 
 
