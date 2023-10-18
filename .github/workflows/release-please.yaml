@@ -23,17 +23,36 @@ jobs:
           include-v-in-tag: false
           default-branch: develop
           changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"Miscellaneous","hidden":false},{"type":"perf","section":"Miscellaneous","hidden":false}]'
-      # 将tag: steps.release.outputs.tag_name 合并到 master 分支
-      # test commit
-      - name: Merge tag to master
+      
+      
+      - name: checkout to main
+        uses: actions/checkout@v4
+        if: ${{ steps.release-please.outputs.release_created }}
+        with:
+          ref: main 
+          
+      - name: Merge tag to main
         if: ${{ steps.release-please.outputs.release_created }}
         run: |
           TAG_NAME="${{ steps.release-please.outputs.tag_name }}"
-          git checkout main
-
           if git merge "refs/tags/${TAG_NAME}"; then
             git push
           else
             echo "Merge failed for tag '${TAG_NAME}'. Please resolve the issue."
             exit 1
           fi
+
+      # 将tag: steps.release.outputs.tag_name 合并到 master 分支
+      # # test commit
+      # - name: Merge tag to master
+      #   if: ${{ steps.release-please.outputs.release_created }}
+      #   run: |
+      #     TAG_NAME="${{ steps.release-please.outputs.tag_name }}"
+      #     git checkout main
+
+      #     if git merge "refs/tags/${TAG_NAME}"; then
+      #       git push
+      #     else
+      #       echo "Merge failed for tag '${TAG_NAME}'. Please resolve the issue."
+      #       exit 1
+      #     fi
