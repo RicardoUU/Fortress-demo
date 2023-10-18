@@ -34,7 +34,6 @@ jobs:
       - name: Merge tag to main
         if: ${{ steps.release-please.outputs.release_created }}
         run: |
-          TAG_NAME="${{ steps.release-please.outputs.tag_name }}"
-          git merge refs/tags/$TAG_NAME
+          git merge refs/tags/${{ steps.release-please.outputs.tag_name }}
           git push
 
