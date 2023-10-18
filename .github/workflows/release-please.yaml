@@ -35,9 +35,6 @@ jobs:
         if: ${{ steps.release-please.outputs.release_created }}
         run: |
           TAG_NAME="${{ steps.release-please.outputs.tag_name }}"
-          if git merge "refs/tags/${TAG_NAME}"; then
-            git push
-          else
-            echo "Merge failed for tag '${TAG_NAME}'. Please resolve the issue."
-            exit 1
-          fi
+          git merge refs/tags/$TAG_NAME
+          git push
+
