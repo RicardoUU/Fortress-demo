@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.0](https://github.com/RicardoUU/Fortress-demo/compare/1.6.5...1.7.0) (2023-10-19)
+
+
+### Features
+
+* add hotfix flows ([b8aff75](https://github.com/RicardoUU/Fortress-demo/commit/b8aff75dace22a6d34f69901a21fca1a233af461))
+
+
+### Bug Fixes
+
+* change hotfix flow ([122d70a](https://github.com/RicardoUU/Fortress-demo/commit/122d70ab5532d11553a48289e1dc46d8c0ac7886))
+* use current branch ([142e26b](https://github.com/RicardoUU/Fortress-demo/commit/142e26b565a0cdc08c8f93c80157ce97fd897ba7))
+
 ## [1.6.5](https://github.com/RicardoUU/Fortress-demo/compare/1.6.4...1.6.5) (2023-10-18)
 
 
