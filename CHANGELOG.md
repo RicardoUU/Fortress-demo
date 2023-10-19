@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/RicardoUU/Fortress-demo/compare/1.7.1...1.7.2) (2023-10-19)
+
+
+### Miscellaneous
+
+* del un unuse code ([ddd0e9e](https://github.com/RicardoUU/Fortress-demo/commit/ddd0e9ea66909d6bcb71ee6e98e46381a0a3eeec))
+
 ## [1.7.1](https://github.com/RicardoUU/Fortress-demo/compare/1.7.0...1.7.1) (2023-10-19)
 
 
