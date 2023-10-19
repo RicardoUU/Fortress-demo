@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.5](https://github.com/RicardoUU/Fortress-demo/compare/1.6.4...1.6.5) (2023-10-18)
+
+
+### Bug Fixes
+
+* merge error ([c108de5](https://github.com/RicardoUU/Fortress-demo/commit/c108de5f3738d2988a2fbc7a5bfac0e67788c60c))
+
 ## [1.6.4](https://github.com/RicardoUU/Fortress-demo/compare/1.6.3...1.6.4) (2023-10-18)
 
 
