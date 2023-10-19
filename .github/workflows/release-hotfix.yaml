@@ -22,7 +22,9 @@ jobs:
           release-type: node
           package-name: Fortress-Demo
           include-v-in-tag: false
-          # default-branch: develop
+          pull-request-title-pattern: "chore(hotfix): release${component} ${version}"
+          ## 使用当前分支
+          default-branch: ${{ github.ref }}
           changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"Miscellaneous","hidden":false},{"type":"perf","section":"Miscellaneous","hidden":false}]'
       
       
