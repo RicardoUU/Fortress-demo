@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.1](https://github.com/RicardoUU/Fortress-demo/compare/1.10.0...1.10.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* change prod on ([0b7562a](https://github.com/RicardoUU/Fortress-demo/commit/0b7562a8ba44429c976b0919061e1ef2a0e6250d))
+
 ## [1.10.0](https://github.com/RicardoUU/Fortress-demo/compare/1.9.0...1.10.0) (2023-10-23)
 
 
