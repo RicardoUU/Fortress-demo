@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/RicardoUU/Fortress-demo/compare/1.8.1...1.9.0) (2023-10-23)
+
+
+### Features
+
+* change for test ([e771e6f](https://github.com/RicardoUU/Fortress-demo/commit/e771e6f791ef276f060cfa273c790d65f53ec92a))
+
 ## [1.8.1](https://github.com/RicardoUU/Fortress-demo/compare/1.8.0...1.8.1) (2023-10-23)
 
 
