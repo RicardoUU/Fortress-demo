@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/RicardoUU/Fortress-demo/compare/1.8.1...1.9.0) (2023-10-23)
+
+
+### Features
+
+* test PROD ci ([3fd59f8](https://github.com/RicardoUU/Fortress-demo/commit/3fd59f876c41bcf8f251460a27bbb101d77cc684))
+
 ## [1.8.1](https://github.com/RicardoUU/Fortress-demo/compare/1.8.0...1.8.1) (2023-10-23)
 
 
