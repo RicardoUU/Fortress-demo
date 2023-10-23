@@ -41,16 +41,16 @@ jobs:
           git merge refs/tags/${{ steps.release-please.outputs.tag_name }}
           git push
 
-      - name: Reset uat to master
+      - name: Reset uat to main
         if: ${{ steps.release-please.outputs.release_created }}
         run: |
-          git fetch --tags
+          git fetch -f
           git checkout origin/uat-sg
-          git reset --hard origin/master
+          git reset --hard origin/main
           git push -f
           git checkout origin/uat-us
-          git reset --hard origin/master
+          git reset --hard origin/main
           git push -f
           git checkout origin/uat-au
-          git reset --hard origin/master
+          git reset --hard origin/main
           git push -f
