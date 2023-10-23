@@ -22,12 +22,12 @@ function App() {
                 </button>
                 <p>
                     Edit <code>src/App.tsx</code> and save to test HMR
-                    xxx
+                    xxxxxx
                 </p>
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
-                change for test 1.x xxxx
+                change for test 1.x xxxxxxxx
             </p>
 
         </div>
