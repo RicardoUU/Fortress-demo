@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.8.0](https://github.com/RicardoUU/Fortress-demo/compare/1.7.2...1.8.0) (2023-10-23)
+
+
+### Features
+
+* add reset uat flows ([953a4d7](https://github.com/RicardoUU/Fortress-demo/commit/953a4d79c910a628ef90e7d025023f6ec7d209c1))
+* 熙龙你看到了吗 ([9a2c028](https://github.com/RicardoUU/Fortress-demo/commit/9a2c0282830b09153a0faa5a09a7b8c2956c7c53))
+
+
+### Bug Fixes
+
+* 我修复了xxxx ([6403af5](https://github.com/RicardoUU/Fortress-demo/commit/6403af55334e4ed7596e7fa0b066bcce634b9e59))
+
 ## [1.7.2](https://github.com/RicardoUU/Fortress-demo/compare/1.7.1...1.7.2) (2023-10-19)
 
 
