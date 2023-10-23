@@ -1,0 +1,21 @@
+name: UAT-SG CI/CD
+on: 
+  release:
+    types: [published]
+  push:
+    branches:
+      - uat-sg
+
+jobs: 
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: test console
+        run: |
+          # 查看当前目录和package.json文件
+          ls -al
+          cat package.json
+          echo "test console"
