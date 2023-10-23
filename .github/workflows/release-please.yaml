@@ -38,5 +38,6 @@ jobs:
           git fetch --tags
           ls -al
           cat package.json
+          git pull
           git merge refs/tags/${{ steps.release-please.outputs.tag_name }}
           git push
