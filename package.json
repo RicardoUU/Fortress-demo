@@ -1,7 +1,7 @@
 {
   "name": "castlery-ui",
   "private": true,
-  "version": "1.7.2",
+  "version": "1.8.0",
   "main": "./dist/castlery-ui.umd.js",
   "module": "./dist/castlery-ui.es.js",
   "types": "./dist/index.d.ts",
