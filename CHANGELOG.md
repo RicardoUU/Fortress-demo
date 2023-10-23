@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.1](https://github.com/RicardoUU/Fortress-demo/compare/1.8.0...1.8.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* change reset flows ([85bc0eb](https://github.com/RicardoUU/Fortress-demo/commit/85bc0eb1ef1fe84543997b61e90877371dbb9662))
+* update reset flows ([c30a1e4](https://github.com/RicardoUU/Fortress-demo/commit/c30a1e461eccabeeff08b5100adf024c39646924))
+
 ## [1.8.0](https://github.com/RicardoUU/Fortress-demo/compare/1.7.2...1.8.0) (2023-10-23)
 
 
