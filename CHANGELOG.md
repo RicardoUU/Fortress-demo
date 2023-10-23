@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/RicardoUU/Fortress-demo/compare/1.9.0...1.10.0) (2023-10-23)
+
+
+### Features
+
+* change merge flows ([97a01fb](https://github.com/RicardoUU/Fortress-demo/commit/97a01fba1767df31c99f8dcd156336245ea911f1))
+
 ## [1.9.0](https://github.com/RicardoUU/Fortress-demo/compare/1.8.1...1.9.0) (2023-10-23)
 
 
