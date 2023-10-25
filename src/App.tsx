@@ -28,7 +28,7 @@ function App() {
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
                 change for test 1.x xxxxxxx
-                xxxxxxx
+                xxx
                 xx 
                 xxxx
             </p>
