@@ -26,5 +26,7 @@ jobs:
         run: cat README.md
       
       - name: Trigger prod.yaml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh workflow run prod.yaml -f branch=${{ github.event.pull_request.head.ref }}
