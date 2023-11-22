@@ -27,6 +27,6 @@ jobs:
       
       - name: Trigger prod.yaml
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
         run: |
           gh workflow run prod.yaml -f branch=${{ github.event.pull_request.head.ref }}
