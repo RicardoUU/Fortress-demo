@@ -14,9 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # 针对pr的代码进行checkout
-          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Display branch information
         run: |
