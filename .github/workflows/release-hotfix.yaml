@@ -1,44 +1,26 @@
-name: release-hotfix
-
+# 监听带有hotfix label的pr合并到develop
+name: hotfix
 on:
-  push:
+  pull_request:
+    types: [labeled]
     branches:
-      - main
-  workflow_dispatch:
-  
-permissions:
-  contents: write
-  pull-requests: write
+      - 'develop'
 
-
-jobs:
-  release-please:
+jobs: 
+  hotfix:
+    # if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'hotfix')
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
-        id: release-please
-        with:
-          token: ${{ secrets.RICARDO_TOKEN }}
-          release-type: node
-          package-name: Fortress-Demo
-          include-v-in-tag: false
-          # pull-request-title-pattern: "chore(hotfix): release${component} ${version}"
-          ## 使用当前分支
-          default-branch: main
-          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"Miscellaneous","hidden":false},{"type":"perf","section":"Miscellaneous","hidden":false}]'
-      
-      
-      - name: checkout to develop
+      - name: Checkout
         uses: actions/checkout@v4
-        if: ${{ steps.release-please.outputs.release_created }}
         with:
-          ref: develop 
-          
-      - name: Merge tag to develop
-        if: ${{ steps.release-please.outputs.release_created }}
+          # 针对pr的代码进行checkout
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Display branch information
         run: |
-          git fetch --tags
+          echo "The branch of the pull request is: ${{ github.event.pull_request.head.ref }}"
+          echo "labels: ${{ github.event.pull_request.labels.*.name }}"
 
-          git merge refs/tags/${{ steps.release-please.outputs.tag_name }}
-          git push
-
+      - name: Cat file
+        run: cat README.md
