@@ -16,3 +16,8 @@ pnpm run storybook
 pnpm test
 pnpm coverage
 ```
+
+4. build
+```bash
+pnpm build
+```
