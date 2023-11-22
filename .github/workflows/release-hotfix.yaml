@@ -8,7 +8,7 @@ on:
 
 jobs: 
   hotfix:
-    # if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'hotfix')
+    if: contains(github.event.pull_request.labels.*.name, 'hotfix')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,7 +20,13 @@ jobs:
       - name: Display branch information
         run: |
           echo "The branch of the pull request is: ${{ github.event.pull_request.head.ref }}"
-          echo "labels: ${{ github.event.pull_request.labels.*.name }}"
+          echo "labels: ${{ contains(github.event.pull_request.labels.*.name, 'hotfix') }}"
 
       - name: Cat file
         run: cat README.md
+      
+      - name: Trigger prod.yaml
+        env:
+          GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
+        run: |
+          gh workflow run prod.yaml -f branch=${{ github.event.pull_request.head.ref }}
