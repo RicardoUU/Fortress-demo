@@ -28,5 +28,6 @@ jobs:
       - name: Trigger prod.yaml
         env:
           GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
+        # 通过github.event.pull_request.head.ref运行
         run: |
-          gh workflow run prod.yaml -f branch=${{ github.event.pull_request.head.ref }}
+          gh workflow run prod.yaml
