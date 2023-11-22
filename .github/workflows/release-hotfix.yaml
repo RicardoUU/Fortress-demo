@@ -24,3 +24,7 @@ jobs:
 
       - name: Cat file
         run: cat README.md
+      
+      - name: Trigger prod.yaml
+        run: |
+          gh workflow run prod.yaml -f branch=${{ github.event.pull_request.head.ref }}
