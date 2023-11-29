@@ -1,71 +1,44 @@
 {
-  "name": "castlery-ui",
+  "name": "fortress-demo",
   "private": true,
-  "version": "1.10.1",
-  "main": "./dist/castlery-ui.umd.js",
-  "module": "./dist/castlery-ui.es.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/castlery-ui.es.js",
-      "require": "./dist/castlery-ui.umd.js"
-    }
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "vitest",
-    "test:dev": "vitest run",
-    "test:ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "chromatic": "npx chromatic --project-token=chpt_82cf5cdfdd6fb97"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.6"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "@storybook/addon-actions": "^7.0.12",
-    "@storybook/addon-essentials": "^7.0.12",
-    "@storybook/addon-interactions": "^7.0.12",
-    "@storybook/addon-links": "^7.0.12",
-    "@storybook/addon-mdx-gfm": "^7.0.12",
-    "@storybook/blocks": "^7.0.12",
-    "@storybook/manager-api": "^7.0.12",
-    "@storybook/react": "^7.0.12",
-    "@storybook/react-vite": "^7.0.12",
-    "@storybook/testing-library": "0.1.0",
-    "@storybook/theming": "^7.0.12",
-    "@testing-library/dom": "^8.19.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/react-hooks": "^8.0.1",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/node": "^18.8.3",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@types/react-test-renderer": "^18.0.0",
-    "@types/styled-components": "^5.1.26",
-    "@vitejs/plugin-react": "^2.1.0",
-    "@vitest/coverage-c8": "^0.24.0",
-    "@vitest/ui": "^0.24.0",
-    "babel-loader": "^8.2.5",
-    "happy-dom": "^7.4.0",
-    "prop-types": "^15.8.1",
-    "react-test-renderer": "^18.2.0",
-    "storybook": "^7.0.12",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0",
-    "vite-plugin-dts": "^1.6.5",
-    "vitest": "^0.24.0"
+    "@storybook/addon-essentials": "^7.6.0",
+    "@storybook/addon-interactions": "^7.6.0",
+    "@storybook/addon-links": "^7.6.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.6.0",
+    "@storybook/react": "^7.6.0",
+    "@storybook/react-vite": "^7.6.0",
+    "@storybook/test": "^7.6.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "chromatic": "^9.1.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "eslint-plugin-storybook": "^0.6.15",
+    "storybook": "^7.6.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
   },
-  "peerDependencies": {
-    "react": "17.x || 18.x",
-    "react-dom": "17.x || 18.x",
-    "styled-components": "^5.0.0"
-  }
+  "readme": "ERROR: No README data found!",
+  "_id": "fortress-demo@0.0.0"
 }
