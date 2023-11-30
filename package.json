@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --project-token=chpt_82cf5cdfdd6fb97 --exit-zero-on-changes",
+    "chromatic": "chromatic --project-token CHROMATIC_PROJECT_TOKEN",
     "test-storybook": "test-storybook",
     "test-storybook:coverage": "test-storybook -- --coverage"
   },
