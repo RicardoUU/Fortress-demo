@@ -15,16 +15,39 @@ jobs:
       ## console输出github.event
       - name: Dump GitHub context
         env:
-          GITHUB_CONTEXT: ${{ toJson(github.event) }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
+
       - name: Echo pr number
         run: |
+          echo "${{ github.ref }}"
+          echo "${{ github.sha}}"
           echo "${{ github.event.number }}"
           echo "${{ github.event.pull_request.number }}"
           echo "${{ github.event.pull_request.head.sha }}"
 
+      - name: Cat commit
+        run: |
+          echo "${{ github.event.pull_request.head.sha }}"
+          echo "${{ github.event.pull_request.head.ref }}"
+          echo "${{ github.event.pull_request.base.sha }}"
+          echo "${{ github.event.pull_request.base.ref }}"
+
       ## checkout到merge到develop分支的commit
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: refs/pull/${{ github.event.number }}/merge
+        # with:
+          # ref: refs/pull/${{ github.event.number }}/merge
+          # ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Cat readme
+        run: |
+          cat README.md
+
+
+      - name: Trigger prod.yaml
+        env:
+          GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
+        # 通过github.event.pull_request.head.ref运行
+        run: |
+          gh workflow run prod.yaml -r ${{ github.ref }}
