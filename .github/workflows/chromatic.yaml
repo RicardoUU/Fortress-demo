@@ -4,14 +4,15 @@ on:
     types: [opened, synchronize]
     branches:
       - develop
-    # paths:
-    #   # 任何包含story字符串的文件夹/文件都会触发
-    #   - '**/story/**'
-    #   - '**/stories/**'
-    #   - '**/storybook/**'
-    #   - '**/__stories__/**'
-    #   - '**stories.**'
-    #   - '**story.**'
+    paths:
+      # 任何包含story字符串的文件夹/文件都会触发
+      # - '**/story/**'
+      # - '**/stories/**'
+      # - '**/storybook/**'
+      # - '**/__stories__/**'
+      # - '**stories.**'
+      # - '**story.**'
+      - 'src/**'
   
   release:
     types: [published]
