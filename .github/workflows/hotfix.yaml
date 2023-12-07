@@ -1,0 +1,30 @@
+name: Hotfix CI
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - develop
+    
+jobs:
+  ## 当merge到develop分支时,checkout到merge到develop分支的commit,并执行build
+  build:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      ## console输出github.event
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github.event) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Echo pr number
+        run: |
+          echo "${{ github.event.number }}"
+          echo "${{ github.event.pull_request.number }}"
+          echo "${{ github.event.pull_request.head.sha }}"
+
+      ## checkout到merge到develop分支的commit
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: refs/pull/${{ github.event.number }}/merge
