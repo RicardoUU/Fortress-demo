@@ -1,10 +1,10 @@
-name: Build
+name: Hotfix CI
 
 on:
   pull_request:
-    branches:
-    - develop
     types: [closed]
+    branches:
+      - develop
     
 jobs:
   ## 当merge到develop分支时,checkout到merge到develop分支的commit,并执行build
