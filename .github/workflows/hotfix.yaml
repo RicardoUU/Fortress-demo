@@ -44,6 +44,9 @@ jobs:
         run: |
           cat README.md
 
+      - name: Cat App.tsx
+        run: |
+          cat scr/App.tsx
 
       - name: Trigger prod.yaml
         env:
