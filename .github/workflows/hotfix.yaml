@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           # ref: refs/pull/${{ github.event.number }}/merge
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: refs/heads/${{ github.event.pull_request.head.ref }}
 
       - name: Cat readme
         run: |
@@ -54,4 +54,4 @@ jobs:
         # 通过github.event.pull_request.head.ref运行
         run: |
           git fetch
-          gh workflow run prod.yaml -r ${{ github.event.pull_request.head.sha }}
+          gh workflow run prod.yaml -r refs/heads/${{ github.event.pull_request.head.ref }}
