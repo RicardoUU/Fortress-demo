@@ -46,7 +46,7 @@ jobs:
 
       - name: Cat App.tsx
         run: |
-          cat scr/App.tsx
+          cat src/App.tsx
 
       - name: Trigger prod.yaml
         env:

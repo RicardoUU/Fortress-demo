@@ -25,7 +25,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      change 07
+      change 08
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
         i am test hotfix 04
