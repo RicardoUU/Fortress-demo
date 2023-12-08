@@ -36,9 +36,9 @@ jobs:
       ## checkout到merge到develop分支的commit
       - name: Checkout
         uses: actions/checkout@v4
-        with:
+        # with:
           # ref: refs/pull/${{ github.event.number }}/merge
-          ref: ${{ github.event.pull_request.head.ref }}
+          # ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Cat readme
         run: |
