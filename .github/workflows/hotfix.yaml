@@ -53,5 +53,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
         # 通过github.event.pull_request.head.ref运行
         run: |
-          # gh workflow run prod.yaml -r refs/heads/${{ github.event.pull_request.head.ref }}
-          gh workflow run prod.yaml -r ${{ github.event.pull_request.head.ref }}
+          gh workflow run prod.yaml -r refs/heads/${{ github.event.pull_request.head.ref }}
+          # gh workflow run prod.yaml -r ${{ github.event.pull_request.head.ref }}
