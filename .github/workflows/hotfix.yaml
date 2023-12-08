@@ -36,9 +36,9 @@ jobs:
       ## checkout到merge到develop分支的commit
       - name: Checkout
         uses: actions/checkout@v4
-        # with:
+        with:
           # ref: refs/pull/${{ github.event.number }}/merge
-          # ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Cat readme
         run: |
@@ -53,4 +53,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
         # 通过github.event.pull_request.head.ref运行
         run: |
-          gh workflow run prod.yaml -r ${{ github.ref }}
+          gh workflow run prod.yaml -r ${{ github.event.pull_request.head.sha }}
