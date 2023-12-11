@@ -25,6 +25,16 @@ jobs:
           default-branch: develop
           changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"Miscellaneous","hidden":false},{"type":"perf","section":"Miscellaneous","hidden":false}]'
       
+      - name: console outputs
+        run : |
+          echo  ${{ toJson(steps.release-please.outputs) }}
+
+      # # hotfix
+      # - name: checkout to main
+      #   uses: actions/checkout@v4
+      #   if: ${{ steps.release-please.outputs.release_created!=true }}
+      #   with:
+      #     ref: main
       
       - name: checkout to main
         uses: actions/checkout@v4
