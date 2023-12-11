@@ -26,8 +26,10 @@ jobs:
           changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"Miscellaneous","hidden":false},{"type":"perf","section":"Miscellaneous","hidden":false}]'
       
       - name: console outputs
+        env:
+          realese-output: ${{ toJson(steps.release-please.outputs) }}
         run : |
-          echo  ${{ toJson(steps.release-please.outputs) }}
+          echo $realese-output
 
       # # hotfix
       # - name: checkout to main
