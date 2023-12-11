@@ -1,31 +1,24 @@
 # 监听带有hotfix label的pr合并到develop
-name: hotfix
+name: release hotfix
 on:
   pull_request:
     ## 修改label或者提交代码都会触发
-    types: [labeled, synchronize, opened]
+    types: [closed]
     branches:
       - 'develop'
 
+permissions:
+  contents: write
+  pull-requests: write
+  
 jobs: 
   hotfix:
-    if: contains(github.event.pull_request.labels.*.name, 'hotfix')
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Display branch information
-        run: |
-          echo "The branch of the pull request is: ${{ github.event.pull_request.head.ref }}"
-          echo "labels: ${{ contains(github.event.pull_request.labels.*.name, 'hotfix') }}"
-
-      - name: Cat file
-        run: cat README.md
-      
-      - name: Trigger prod.yaml
-        env:
-          GITHUB_TOKEN: ${{ secrets.RICARDO_TOKEN }}
-        # 通过github.event.pull_request.head.ref运行
-        run: |
-          gh workflow run prod.yaml -r ${{ github.event.pull_request.head.ref }}
+      - uses: google-github-actions/release-please-action@v4
+        id: release-please
+        with:
+          token: ${{ secrets.RICARDO_TOKEN }}
+          release-type: node
+          include-component-in-tag: true

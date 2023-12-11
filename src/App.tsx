@@ -25,9 +25,23 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      change 08
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+        i am test hotfix 04
+        test 09
+        test 10
+        test 11
+        test15
+        test 17
+        test 18 
+        test 19 
+        test 20
       </p>
+      i ma chage 
+      test test
+      test dev 10
+      test dev 11
     </>
   )
 }
